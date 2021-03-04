@@ -22,7 +22,23 @@ The `_toc.yml` may also be used to add structure such as parts, chapters and sec
 
 ## Building the book
 
-Install Jupyter Book with `pip install jupyter-book`
+Install Jupyter Book with `pip install jupyter-book`. This will need to be done in each environment where you are using Jupyter Book.
 
 Build book with the `jupyter-book build` command followed by the contents directory, e.g. `jupyter-book build ./content` 
+
+This will create a `_build` folder that contains html. You can check the pages work by opening them on your computer.
+
+## Pushing to GitHub
+
+First install ghp-import with `pip install ghp-import`. This will need to be done in each environment where you are using Jupyter Book.
+
+Then go to the folder which contains the `_build` folder, and from a terminal run:
+
+`ghp-import -n -p -f _build/html`
+
+This pushes the htmp up to the GitHub repo, into a branch called `gh-pages` (which it creates if necessary).
+
+## Activating the pages
+
+In the GitHub repo, go to settings and scroll down to GitHub pages. Select the `gh-pages` as the source. This is all you need to do. It provides the link for the home page when you do this.
 

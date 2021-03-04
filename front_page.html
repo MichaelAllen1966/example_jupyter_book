@@ -221,6 +221,16 @@
   <a class="reference internal nav-link" href="#building-the-book">
    Building the book
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pushing-to-github">
+   Pushing to GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activating-the-pages">
+   Activating the pages
+  </a>
   <ul class="nav section-nav flex-column">
   </ul>
  </li>
@@ -258,8 +268,20 @@
 </div>
 <div class="section" id="building-the-book">
 <h2>Building the book<a class="headerlink" href="#building-the-book" title="Permalink to this headline">¶</a></h2>
-<p>Install Jupyter Book with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code></p>
+<p>Install Jupyter Book with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code>. This will need to be done in each environment where you are using Jupyter Book.</p>
 <p>Build book with the <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span></code> command followed by the contents directory, e.g. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">./content</span></code></p>
+<p>This will create a <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder that contains html. You can check the pages work by opening them on your computer.</p>
+</div>
+<div class="section" id="pushing-to-github">
+<h2>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this headline">¶</a></h2>
+<p>First install ghp-import with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ghp-import</span></code>. This will need to be done in each environment where you are using Jupyter Book.</p>
+<p>Then go to the folder which contains the <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder, and from a terminal run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p>
+<p>This pushes the htmp up to the GitHub repo, into a branch called <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> (which it creates if necessary).</p>
+</div>
+<div class="section" id="activating-the-pages">
+<h2>Activating the pages<a class="headerlink" href="#activating-the-pages" title="Permalink to this headline">¶</a></h2>
+<p>In the GitHub repo, go to settings and scroll down to GitHub pages. Select the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> as the source. This is all you need to do. It provides the link for the home page when you do this.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
