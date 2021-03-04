@@ -1,0 +1,15 @@
+- file: front_page
+  numbered: true
+  
+- part: Part 1. Markdown
+  chapters:
+  - file: simple_markdown
+  - file: myst_markdown
+  
+- part: Part 2. Notebooks
+  chapters:
+  - file: charts
+    sections:
+      - file: simple_plot
+      - file: wireframe_plot
+      - file: surface_plot
