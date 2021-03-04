@@ -21,9 +21,23 @@ The `_toc.yml` may also be used to add structure such as parts, chapters and sec
 
 For example this book uses the following in the _toc.yml file:
 
-'''
-
-'''
+```
+- file: front_page
+  numbered: true
+  
+- part: Part 1. Markdown
+  chapters:
+  - file: simple_markdown
+  - file: myst_markdown
+  
+- part: Part 2. Notebooks
+  chapters:
+  - file: charts
+    sections:
+      - file: simple_plot
+      - file: wireframe_plot
+      - file: surface_plot
+```
 
 
 ## Building the book
@@ -53,4 +67,21 @@ In the GitHub repo, go to settings and scroll down to GitHub pages. Select the `
 You may also specify a _config.yml file. This may be used to refine the notebook, for example giving a title, or specifying whether to use cached notebook content (or re-run notebooks).
 
 See the example in the GitHub repo.
+
+For example this book uses the following in the _toc.yml file:
+
+```
+# book settings
+title: Example Jupyter Book
+author: Mike Allen
+#logo: images/logo.png
+
+
+#only build files specified in table of contents file
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: cache #cache output from .ipynb files for faster build
+  timeout: -1 #no time restriction on notebook execution
+```
 
