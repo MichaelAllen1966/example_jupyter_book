@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started with Jupyter Books &#8212; My Jupyter Book</title>
+    <title>Getting started with Jupyter Books &#8212; Example Jupyter Book</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -75,7 +75,7 @@
 <a class="navbar-brand text-wrap" href="index.html">
   
   
-  <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+  <h1 class="site-logo" id="site-title">Example Jupyter Book</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -231,6 +231,11 @@
   <a class="reference internal nav-link" href="#activating-the-pages">
    Activating the pages
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#config-file">
+   Config file
+  </a>
   <ul class="nav section-nav flex-column">
   </ul>
  </li>
@@ -265,6 +270,9 @@
 <p>The order, and breakdown, of the book is held in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file in the book contents. folder.</p>
 <p>This file may be as simple as a list of required markdown and notebook pages with the syntax <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">file</span> <span class="pre">filename_with_no_extension</span></code>.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> may also be used to add structure such as parts, chapters and sections.</p>
+<p>For example this book uses the following in the _toc.yml file:</p>
+<p>‘’’</p>
+<p>‘’’</p>
 </div>
 <div class="section" id="building-the-book">
 <h2>Building the book<a class="headerlink" href="#building-the-book" title="Permalink to this headline">¶</a></h2>
@@ -282,6 +290,11 @@
 <div class="section" id="activating-the-pages">
 <h2>Activating the pages<a class="headerlink" href="#activating-the-pages" title="Permalink to this headline">¶</a></h2>
 <p>In the GitHub repo, go to settings and scroll down to GitHub pages. Select the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> as the source. This is all you need to do. It provides the link for the home page when you do this.</p>
+</div>
+<div class="section" id="config-file">
+<h2>Config file<a class="headerlink" href="#config-file" title="Permalink to this headline">¶</a></h2>
+<p>You may also specify a _config.yml file. This may be used to refine the notebook, for example giving a title, or specifying whether to use cached notebook content (or re-run notebooks).</p>
+<p>See the example in the GitHub repo.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -324,7 +337,7 @@
     <div class="container">
       <p>
         
-          By The Jupyter Book community<br/>
+          By Mike Allen<br/>
         
             &copy; Copyright 2020.<br/>
       </p>

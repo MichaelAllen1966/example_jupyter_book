@@ -19,6 +19,12 @@ This file may be as simple as a list of required markdown and notebook pages wit
 
 The `_toc.yml` may also be used to add structure such as parts, chapters and sections.
 
+For example this book uses the following in the _toc.yml file:
+
+'''
+
+'''
+
 
 ## Building the book
 
@@ -41,4 +47,10 @@ This pushes the htmp up to the GitHub repo, into a branch called `gh-pages` (whi
 ## Activating the pages
 
 In the GitHub repo, go to settings and scroll down to GitHub pages. Select the `gh-pages` as the source. This is all you need to do. It provides the link for the home page when you do this.
+
+## Config file
+
+You may also specify a _config.yml file. This may be used to refine the notebook, for example giving a title, or specifying whether to use cached notebook content (or re-run notebooks).
+
+See the example in the GitHub repo.
 
