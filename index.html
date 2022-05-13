@@ -1,2 +1,439 @@
 
-<meta http-equiv="Refresh" content="0; url=front_page.html" />
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started with Jupyter Books &#8212; Example Jupyter Book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Some simple markdown" href="simple_markdown.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Example Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   Getting started with Jupyter Books
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Part 1. Markdown
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="simple_markdown.html">
+   1. Some simple markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="myst_markdown.html">
+   2. MyST markdown
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Part 2. Notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="charts.html">
+   3. Some example MatPlotLib charts
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="simple_plot.html">
+     3.1. A simple matplotlib chart
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="wireframe_plot.html">
+     3.2. A Wiframe plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="surface_plot.html">
+     3.3. A surface plot
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method-overview">
+   Method overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-the-book">
+   Building the book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pushing-to-github">
+   Pushing to GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activating-the-pages">
+   Activating the pages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#config-file">
+   Config file
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Getting started with Jupyter Books</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method-overview">
+   Method overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-the-book">
+   Building the book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pushing-to-github">
+   Pushing to GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activating-the-pages">
+   Activating the pages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#config-file">
+   Config file
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-jupyter-books">
+<h1>Getting started with Jupyter Books<a class="headerlink" href="#getting-started-with-jupyter-books" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="method-overview">
+<h2>Method overview<a class="headerlink" href="#method-overview" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Set up repository (repo) on GitHub (<a class="reference external" href="http://github.com">github.com</a>)</p></li>
+<li><p>Clone repo to local computer</p></li>
+<li><p>Add required content</p></li>
+<li><p>Create a table of contents _toc.yml file in content folder</p></li>
+<li><p>Build book</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to push contents of book to GitHub (creates a <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch)</p></li>
+<li><p>Go to GitHub repo settings, and activate GitHub pages (point to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>) and copy link to webiste</p></li>
+</ol>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p>The order, and breakdown, of the book is held in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file in the book contents. folder.</p>
+<p>This file may be as simple as a list of required markdown and notebook pages with the syntax <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">file</span> <span class="pre">filename_with_no_extension</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> may also be used to add structure such as parts, chapters and sections.</p>
+<p>For example this book uses the following in the _toc.yml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">front_page</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
+  
+<span class="o">-</span> <span class="n">part</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">1.</span> <span class="n">Markdown</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">simple_markdown</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">myst_markdown</span>
+  
+<span class="o">-</span> <span class="n">part</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">2.</span> <span class="n">Notebooks</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">charts</span>
+    <span class="n">sections</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">simple_plot</span>
+      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">wireframe_plot</span>
+      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">surface_plot</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-the-book">
+<h2>Building the book<a class="headerlink" href="#building-the-book" title="Permalink to this headline">¶</a></h2>
+<p>Install Jupyter Book with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code>. This will need to be done in each environment where you are using Jupyter Book.</p>
+<p>Build book with the <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span></code> command followed by the contents directory, e.g. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">./content</span></code></p>
+<p>This will create a <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder that contains html. You can check the pages work by opening them on your computer.</p>
+</div>
+<div class="section" id="pushing-to-github">
+<h2>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this headline">¶</a></h2>
+<p>First install ghp-import with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ghp-import</span></code>. This will need to be done in each environment where you are using Jupyter Book.</p>
+<p>Then go to the folder which contains the <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder, and from a terminal run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p>
+<p>This pushes the htmp up to the GitHub repo, into a branch called <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> (which it creates if necessary).</p>
+</div>
+<div class="section" id="activating-the-pages">
+<h2>Activating the pages<a class="headerlink" href="#activating-the-pages" title="Permalink to this headline">¶</a></h2>
+<p>In the GitHub repo, go to settings and scroll down to GitHub pages. Select the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> as the source. This is all you need to do. It provides the link for the home page when you do this.</p>
+</div>
+<div class="section" id="config-file">
+<h2>Config file<a class="headerlink" href="#config-file" title="Permalink to this headline">¶</a></h2>
+<p>You may also specify a _config.yml file. This may be used to refine the notebook, for example giving a title, or specifying whether to use cached notebook content (or re-run notebooks).</p>
+<p>See the example in the GitHub repo.</p>
+<p>For example this book uses the following in the _toc.yml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># book settings</span>
+<span class="n">title</span><span class="p">:</span> <span class="n">Example</span> <span class="n">Jupyter</span> <span class="n">Book</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Mike</span> <span class="n">Allen</span>
+<span class="c1">#logo: images/logo.png</span>
+
+
+<span class="c1">#only build files specified in table of contents file</span>
+<span class="n">only_build_toc_files</span><span class="p">:</span> <span class="n">true</span>
+
+<span class="n">execute</span><span class="p">:</span>
+  <span class="n">execute_notebooks</span><span class="p">:</span> <span class="n">cache</span> <span class="c1">#cache output from .ipynb files for faster build</span>
+  <span class="n">timeout</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">#no time restriction on notebook execution</span>
+</pre></div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="simple_markdown.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Some simple markdown</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Mike Allen<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

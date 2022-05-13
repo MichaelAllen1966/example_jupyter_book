@@ -4,7 +4,6 @@
 
 1. Set up repository (repo) on GitHub (github.com)
 1. Clone repo to local computer
-1. Create a folder for book content (markdown pages and Jupyter notebooks)
 1. Add required content
 1. Create a table of contents _toc.yml file in content folder
 1. Build book
