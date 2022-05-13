@@ -322,21 +322,22 @@ const thebe_selector_output = ".output, .cell_output"
 <p>This file may be as simple as a list of required markdown and notebook pages with the syntax <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">file</span> <span class="pre">filename_with_no_extension</span></code>.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> may also be used to add structure such as parts, chapters and sections.</p>
 <p>For example this book uses the following in the _toc.yml file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">front_page</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<span class="n">root</span><span class="p">:</span> <span class="n">index</span>
+<span class="n">parts</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">1.</span> <span class="n">Markdown</span>
   <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
-  
-<span class="o">-</span> <span class="n">part</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">1.</span> <span class="n">Markdown</span>
   <span class="n">chapters</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">simple_markdown</span>
   <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">myst_markdown</span>
-  
-<span class="o">-</span> <span class="n">part</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">2.</span> <span class="n">Notebooks</span>
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Part</span> <span class="mf">2.</span> <span class="n">Notebooks</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
   <span class="n">chapters</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">charts</span>
     <span class="n">sections</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">simple_plot</span>
-      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">wireframe_plot</span>
-      <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">surface_plot</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">simple_plot</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">wireframe_plot</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">surface_plot</span>
 </pre></div>
 </div>
 </div>

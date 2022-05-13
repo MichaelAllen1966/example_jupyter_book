@@ -21,21 +21,22 @@ The `_toc.yml` may also be used to add structure such as parts, chapters and sec
 For example this book uses the following in the _toc.yml file:
 
 ```
-- file: front_page
+format: jb-book
+root: index
+parts:
+- caption: Part 1. Markdown
   numbered: true
-  
-- part: Part 1. Markdown
   chapters:
   - file: simple_markdown
   - file: myst_markdown
-  
-- part: Part 2. Notebooks
+- caption: Part 2. Notebooks
+  numbered: true
   chapters:
   - file: charts
     sections:
-      - file: simple_plot
-      - file: wireframe_plot
-      - file: surface_plot
+    - file: simple_plot
+    - file: wireframe_plot
+    - file: surface_plot
 ```
 
 
